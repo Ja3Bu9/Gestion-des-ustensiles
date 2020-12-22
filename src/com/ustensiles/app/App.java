@@ -23,8 +23,6 @@ public class App {
 		Cuilliere cuil = new Cuilliere();
 		AssietteRonde assietteronde = new AssietteRonde();
 		AssietteCarree assiettecarree = new AssietteCarree();
-		Assiette assiette = new Assiette();
-		Ustensile ustensile = new Ustensile();
 		
 		while(true) {
 		System.out.println("AssietteCarre :\n");
@@ -42,11 +40,11 @@ public class App {
 		System.out.println("nombre des cuillères :" + cuil.afficherCuillières(conn));
 		
 				
-		System.out.println("\nla somme des surfaces :" + assiette.SommeSurfaceAssiettes(assietteronde.calculSurfaceAssiettesRondes(conn), assiettecarree.calculSurfaceAssiettesCarree(conn)));
+		System.out.println("\nla somme des surfaces :" + assietteronde.calculSurfaceAssiettesRondes(conn)+ assiettecarree.calculSurfaceAssiettesCarree(conn));
 		
 		
 		
-		System.out.println("\nla somme des valeurs :" + ustensile.afficherValeurTotale(cuil.PrixCuillieres(conn), assietteronde.PrixAssietteRonde(conn), assiettecarree.PrixAssietteCarree(conn)));
+		System.out.println("\nla somme des valeurs :" + cuil.PrixCuillieres(conn)+ assietteronde.PrixAssietteRonde(conn)+assiettecarree.PrixAssietteCarree(conn));
 		
 	
 		

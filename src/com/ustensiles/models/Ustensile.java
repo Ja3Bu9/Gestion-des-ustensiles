@@ -1,6 +1,6 @@
 package com.ustensiles.models;
 
-public class Ustensile {
+public abstract class Ustensile {
 
 	private int anneeFabrication;
 
@@ -22,11 +22,7 @@ public class Ustensile {
 	}
 	
 	
-	public int afficherValeurTotale(int a,int b, int c) {
-
-        return  a + b + c;
-
-    }
+	
 
 	@Override
 	public String toString() {
